@@ -13,20 +13,18 @@ function Home(props) {
   const classes = useStyles();
   return (
     <>
-      <Navbar />
-
       <Header />
       <Particles
         canvasClassName={classes.particlesCanva}
         params={{
           particles: {
             density: {
-                enable:true,
-                value_ares:900
+              enable: true,
+              value_ares: 900,
             },
-            opacity:{
-                value:1
-            }
+            opacity: {
+              value: 1,
+            },
           },
         }}
       />

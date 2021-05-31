@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import RightMenuSlider from '@material-ui/core/Drawer';
+import {Link} from 'react-router-dom'
 import {
   AppBar,
   Toolbar,
@@ -14,7 +15,7 @@ import {
   ListItemIcon,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { ArrowBack, Home, ContactMail, Apps } from "@material-ui/icons";
+import { ArrowBack, Home, ContactMail, Apps,Assignment } from "@material-ui/icons";
 import home from "../images/home.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -37,14 +38,22 @@ const useStyles = makeStyles((theme) => ({
 const navItems = [
   {
     listIcon: <Home />,
+    listLink:"/",
     listText: "Home",
   },
   {
     listIcon: <Apps />,
+    listLink:"/technologies",
     listText: "Technologies",
   },
   {
+    listIcon: <Assignment />,
+    listLink:"/resume",
+    listText: "Resume",
+  },
+  {
     listIcon: <ContactMail />,
+    listLink:"/contact",
     listText: "Contact Me",
   },
 ];
@@ -63,7 +72,7 @@ function Navbar(props) {
     <List>
       {navItems.map((item, key) => {
         return (
-          <ListItem button key={key} >
+          <ListItem button key={key} component={Link} to={item.listLink}>
             <ListItemIcon className={classes.listItem}>
               {item.listIcon}
             </ListItemIcon>
