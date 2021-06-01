@@ -5,6 +5,8 @@ import Home from './components/Home';
 import Resume from './components/Resume';
 import {Redirect, Route} from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 function App() {
   return (
     <>
@@ -12,7 +14,8 @@ function App() {
     <Navbar/>
      <Route exact path="/" component={Home}/>
      <Route exact path="/resume" component={Resume}/>
-     <Redirect to="/"/>
+     <Route exact path="/portfolio" component={Portfolio}/>
+    <Route exact path="/contact" component={Contact}/>
     </>
   );
 }

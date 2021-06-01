@@ -52,11 +52,11 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
-import FastfoodIcon from '@material-ui/icons/Fastfood';
+
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 
-import {AllInclusive, Book, Exposure, Language, Policy} from '@material-ui/icons';
+import {AllInclusive, Book, Exposure, MenuBook, Policy, Web} from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -73,8 +73,14 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 const timeline = [
+  {
+    year: "2018",
+    content: "Special Theory of Relativity",
+    subcontent:"A remote course under guidance of Prof.H.C.Verma held by IIT Kanpur",
+    icon:<MenuBook/>
+  },
       {
-        year: "2018",
+        year: "2019",
         content: "Dr.Vikram Sarabhai Dal",
         subcontent:"A group of young people passionate about Science",
         icon:<Exposure/>
@@ -99,6 +105,12 @@ const timeline = [
       },
       {
         year: "2021",
+        content: "Commercial Website Development",
+        subcontent:"Developed a commercial website for a private firm VMS Controls",
+        icon:<Web/>
+      },
+      {
+        year: "2021",
         content: "BlogPost",
         subcontent:"Personal Project: A webapp to write your own stories",
         icon:<Book/>
@@ -112,14 +124,14 @@ export default function TimeLine() {
       {
           timeline.map((item,key)=>{
               return(
-                <TimelineItem >
+                <TimelineItem key={key}>
                 <TimelineOppositeContent >
                   <Typography variant="h5" className={classes.year}>
                     {item.year}
                   </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
-                  <TimelineDot variant="h4" className={classes.timelineicon}>
+                  <TimelineDot className={classes.timelineicon}>
                     {item.icon}
                   </TimelineDot>
                   <TimelineConnector />

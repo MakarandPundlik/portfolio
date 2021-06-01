@@ -17,6 +17,7 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import { ArrowBack, Home, ContactMail, Apps,Assignment } from "@material-ui/icons";
 import home from "../images/home.png";
+import BottomNav from "./BottomNav";
 
 const useStyles = makeStyles((theme) => ({
   menuSliderContainer: {
@@ -43,7 +44,7 @@ const navItems = [
   },
   {
     listIcon: <Apps />,
-    listLink:"/technologies",
+    listLink:"/portfolio",
     listText: "Technologies",
   },
   {
@@ -109,6 +110,7 @@ function Navbar(props) {
             onClose={toggleNav("right",false)}
             >
                 {sideList("right")}
+                <BottomNav/>
             </RightMenuSlider>
           </Toolbar>
         </AppBar>
