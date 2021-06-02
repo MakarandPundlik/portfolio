@@ -104,7 +104,7 @@ function Portfolio(props) {
                     <Button size="small">
                       <Share />
                     </Button>
-                    <Button size="small">
+                    <Button size="small" href={item.github} target="_blank">
                       <GitHub />
                     </Button>
                   </CardActions>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {BottomNavigation,BottomNavigationAction,Box} from '@material-ui/core';
+import {BottomNavigation,BottomNavigationAction,Box,Button} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 import {Facebook,Twitter,LinkedIn,GitHub, Instagram, WhatsApp} from '@material-ui/icons';
 const useStyles = makeStyles((theme)=>({
@@ -22,39 +22,69 @@ function BottomNav(props) {
     return (
         <Box>
         <BottomNavigation style={{backgroundColor:"#233"}}>
-            <BottomNavigationAction
+            <Button
+                target="_blank"
+                href="https://www.facebook.com/makarand.pundlik/"
+            >
+                <BottomNavigationAction
             className={classes.root}
             style={{padding:0}}
             icon={<Facebook/>}
             />
-             <BottomNavigationAction
+            </Button>
+            <Button
+                target="_blank"
+                href="https://twitter.com/makarand2308"
+            >
+                <BottomNavigationAction
             className={classes.root}
             style={{padding:0}}
             icon={<Twitter/>}
             />
-             <BottomNavigationAction
+            </Button>
+            <Button
+                target="_blank"
+                href="https://www.instagram.com/makarandpundlik/"
+            >
+                <BottomNavigationAction
             className={classes.root}
             style={{padding:0}}
             icon={<Instagram/>}
             />
+            </Button>
             
         </BottomNavigation>
         <BottomNavigation style={{backgroundColor:"#233"}}>
-            <BottomNavigationAction
+        <Button
+                target="_blank"
+                href="https://github.com/MakarandPundlik"
+            >
+                <BottomNavigationAction
             className={classes.root}
             style={{padding:0}}
             icon={<GitHub/>}
             />
-             <BottomNavigationAction
+            </Button>
+            <Button
+                target="_blank"
+                href="https://github.com/MakarandPundlik"
+            >
+                <BottomNavigationAction
             className={classes.root}
             style={{padding:0}}
             icon={<WhatsApp/>}
             />
-             <BottomNavigationAction
+            </Button>
+           <Button
+                target="_blank"
+                href="https://www.linkedin.com/in/makarand-pundlik-9127461a2/"
+            >
+                <BottomNavigationAction
             className={classes.root}
             style={{padding:0}}
             icon={<LinkedIn/>}
             />
+            </Button>
             
         </BottomNavigation>
         </Box>
