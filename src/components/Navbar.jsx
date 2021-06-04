@@ -15,9 +15,10 @@ import {
   ListItemIcon,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { ArrowBack, Home, ContactMail, Apps,Assignment } from "@material-ui/icons";
+import { ArrowBack, Home, ContactMail, Apps,Assignment, Build } from "@material-ui/icons";
 import home from "../images/home.png";
 import BottomNav from "./BottomNav";
+import Technologies from "./Technologies";
 
 const useStyles = makeStyles((theme) => ({
   menuSliderContainer: {
@@ -45,18 +46,24 @@ const navItems = [
   {
     listIcon: <Apps />,
     listLink:"/portfolio",
-    listText: "Technologies",
+    listText: "Projects",
   },
   {
     listIcon: <Assignment />,
     listLink:"/resume",
-    listText: "Resume",
+    listText: "Experience",
+  },
+  {
+    listIcon: <Build />,
+    listLink:"/technologies",
+    listText: "Tools & Technologies",
   },
   {
     listIcon: <ContactMail />,
     listLink:"/contact",
     listText: "Contact Me",
   },
+  
 ];
 function Navbar(props) {
   //navbar state

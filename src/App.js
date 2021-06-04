@@ -7,6 +7,7 @@ import { Route} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Technologies from './components/Technologies';
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
      <Route exact path="/resume" component={Resume}/>
      <Route exact path="/portfolio" component={Portfolio}/>
     <Route exact path="/contact" component={Contact}/>
+    <Route exact path="/technologies" component={Technologies}/>
     </>
   );
 }
