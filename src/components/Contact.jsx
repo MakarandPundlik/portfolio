@@ -7,7 +7,8 @@ const useStyles = makeStyles((theme)=>({
         top:"50%",
         left:"50%",
         transform:"translate(-50%,-50%)",
-        position:"absolute"
+        position:"absolute",
+        
     },
     button:{
         color:"tomato",

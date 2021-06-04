@@ -1,34 +1,43 @@
-import { Box, Grid, Avatar } from "@material-ui/core";
+import { Box, Grid, Avatar,Tooltip } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
 import iconsdata from "./IconData";
 import ProgressBar from "./ProgressBar";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    background: "#233",
-    height: "100vh",
+  root:{
+        top:"10%",
+        left:"40%",
+        transform:"translate(-35%,-1%)",
+        position:"absolute",
+        
   },
   styledAvatar: {
     height: theme.spacing(7),
     width: theme.spacing(7),
     margin: "1rem",
+    "&:hover":{
+      height:"4rem",
+      width:"4rem"
+    }
   },
 }));
 
 function Technologies(props) {
   const classes = useStyles();
   return (
-    <Box className={classes.root}>
-      <Grid container alignItems="center" justify="center">
-        {iconsdata.map((item, key) => {
-          return (
+    <Box component="div" className={classes.root}>
+      <Grid container >
+        {iconsdata.map((item, key) => 
+           (
             <Grid item xs={12} md={6} lg={6} xl={4} key={key} style={{display:"flex"}}>
-              <Avatar src={item.icon} className={classes.styledAvatar} />
-              <ProgressBar />
+             <Tooltip title={item.title}>
+             <Avatar src={item.icon} className={classes.styledAvatar} />
+             </Tooltip>
+              <ProgressBar value={item.progress}/>
             </Grid>
-          );
-        })}
+          )
+        )}
       </Grid>
     </Box>
   );
