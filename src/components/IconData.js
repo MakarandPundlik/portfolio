@@ -7,6 +7,10 @@ import java from '../images/java.png';
 import html from '../images/html.png';
 import css from '../images/css.png';
 import bootstrap from '../images/bootstrap.png';
+import c from '../images/c.png';
+import cpp from '../images/c++.jpg';
+import github from '../images/github.jpg';
+
 
 const iconsdata = [
     {
@@ -46,6 +50,18 @@ const iconsdata = [
     {
         icon:javascript,
         progress:70
+    },
+    {
+        icon:c,
+        progress:75
+    },
+    {
+        icon:cpp,
+        progress:75
+    },
+    {
+        icon:github,
+        progress:90
     },
 ]
 
