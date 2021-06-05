@@ -3,6 +3,7 @@ import blogpost from "../images/blogpost.png";
 import ipr from "../images/ipr.png";
 import vms from "../images/vms.jpg";
 import java from "../images/java.jpg";
+import covid from "../images/covid.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 import { GitHub, Share } from "@material-ui/icons";
 import {
@@ -25,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   cardContainer: {
     maxWidth: 345,
     margin: "2rem auto",
-    background: "tomato",
+    background: "#ffc107",
   },
   cardTitle: {
     color: "#fff",
@@ -36,6 +37,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const projects = [
+  {
+    title: "CovidTracker",
+    content:
+      "A webapp where data of covid-19 is displayed fetched using external APIs. It also displayes data by map and charts for respective countries using chartJs and public APIs of map.",
+    github: "https://github.com/MakarandPundlik/covidtracker",
+    image: covid,
+  },
   {
     title: "BlogPost",
     content:
@@ -71,6 +79,7 @@ const projects = [
     github: "https://github.com/MakarandPundlik/Advanced-Java",
     image: java,
   },
+  
 ];
 function Portfolio(props) {
   const classes = useStyles();

@@ -12,7 +12,7 @@ const useStyles = makeStyles({
   },
   colorPrimary:{
   "& .MuiLinearProgress-barColorPrimary": {
-      backgroundColor: "yellow",
+      backgroundColor: "#ffc107",
   },
   }
 });
@@ -25,7 +25,7 @@ function LinearProgressWithLabel(props) {
         <LinearProgress variant="determinate" {...props} className={classes.colorPrimary}/>
       </Box>
       <Box minWidth={35}>
-        <Typography variant="body2" style={{color:"yellow"}}>{`${Math.round(
+        <Typography variant="body2" style={{color:"#ffc107"}}>{`${Math.round(
           props.value
         )}%`}</Typography>
       </Box>
