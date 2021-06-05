@@ -62,12 +62,12 @@ const iconsdata = [
     },
     {
         icon:c,
-        progress:75,
+        progress:70,
         title:"C"
     },
     {
         icon:cpp,
-        progress:75,
+        progress:70,
         title:"C++"
     },
     {

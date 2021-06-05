@@ -18,7 +18,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { ArrowBack, Home, ContactMail, Apps,Assignment, Build } from "@material-ui/icons";
 import home from "../images/home.png";
 import BottomNav from "./BottomNav";
-import Technologies from "./Technologies";
+
 
 const useStyles = makeStyles((theme) => ({
   menuSliderContainer: {

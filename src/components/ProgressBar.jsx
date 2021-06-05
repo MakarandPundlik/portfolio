@@ -48,7 +48,7 @@ export default function ProgressBar(props) {
     
     const timer = setInterval(() => {
       setProgress((prevProgress) =>
-        prevProgress > props.value ? 0 : prevProgress + 10
+        prevProgress >= props.value ? 0 : prevProgress + 10
       );
     }, 1500);
     return () => {
