@@ -12,7 +12,7 @@ import {
   LinkedIn,
   GitHub,
   Instagram,
-  WhatsApp,
+  
   Email,
 } from "@material-ui/icons";
 const useStyles = makeStyles((theme) => ({

@@ -45,7 +45,7 @@ const navItems = [
   },
   {
     listIcon: <Apps />,
-    listLink:"/portfolio",
+    listLink:"/projects",
     listText: "Projects",
   },
   {
