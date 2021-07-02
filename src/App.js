@@ -1,6 +1,6 @@
 
 import { CssBaseline } from '@material-ui/core';
-import './App.css';
+
 import Home from './components/Home';
 import Resume from './components/Resume';
 import { Route} from 'react-router-dom';

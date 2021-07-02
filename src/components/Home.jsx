@@ -1,34 +1,23 @@
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
-import Particles from "react-particles-js";
+
 import Header from "./Header";
 
 
 const useStyles = makeStyles({
-  particlesCanva: {
-    position: "absolute",
-  },
+ root:{
+   background:"#233",
+   height:"100vh",
+   width:"100vw"
+ }
 });
 function Home(props) {
   const classes = useStyles();
   return (
-    <>
+    <div className={classes.root}>
       <Header />
-      <Particles
-        canvasClassName={classes.particlesCanva}
-        params={{
-          particles: {
-            density: {
-              enable: true,
-              value_ares: 900,
-            },
-            opacity: {
-              value: 1,
-            },
-          },
-        }}
-      />
-    </>
+     
+    </div>
   );
 }
 

@@ -15,7 +15,7 @@ import {
   ListItemIcon,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { ArrowBack, Home, ContactMail, Apps,Assignment, Build } from "@material-ui/icons";
+import { MenuOpen, Home, ContactMail, Apps,Assignment, Build } from "@material-ui/icons";
 import home from "../images/home.png";
 import BottomNav from "./BottomNav";
 
@@ -103,10 +103,10 @@ function Navbar(props) {
     <>
      
       <Box component="nav">
-        <AppBar position="static" style={{ background: "#222" }}>
+        <AppBar position="static" style={{ background: "#222",width:"100vw" }}>
           <Toolbar>
             <IconButton onClick={toggleNav("right",true)}>
-              <ArrowBack style={{ color: "tomato" }} />
+              <MenuOpen style={{ color: "tomato",fontSize:"1.5em" }} />
             </IconButton>
             <Typography variant="h4" style={{ color: "tan" }}>
               Portfolio

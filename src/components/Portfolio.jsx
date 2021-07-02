@@ -21,18 +21,19 @@ import {
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#233",
-    height: "100%",
+    
+    width:"100vw"
   },
   cardContainer: {
     maxWidth: 345,
     margin: "2rem auto",
-    background: "#ffc107",
+    background: "#fff",
   },
   cardTitle: {
-    color: "#fff",
+    
   },
   cardContent: {
-    color: "#fff",
+   
   },
 }));
 
@@ -40,7 +41,7 @@ const projects = [
   {
     title: "CovidTracker",
     content:
-      "A webapp where data of covid-19 is displayed fetched using external APIs. It also displayes data by map and charts for respective countries using chartJs and public APIs of map.",
+      "A webapp where data of covid-19 is displayed fetched using external APIs. It also displayes data on map and charts for respective countries using chartJs and public APIs of map.",
     github: "https://github.com/MakarandPundlik/covidtracker",
     image: covid,
   },
@@ -88,7 +89,7 @@ function Portfolio(props) {
       <Grid container>
         {projects.map((item, key) => {
           return (
-            <Grid item alignItem="center" sm={8} md={6}>
+            <Grid item alignItem="center" sm={8} md={6} xl={4} lg={4} >
               <Card className={classes.cardContainer} key={key}>
                 <CardActionArea>
                   <CardMedia
@@ -110,9 +111,7 @@ function Portfolio(props) {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">
-                      <Share />
-                    </Button>
+                    
                     <Button size="small" href={item.github} target="_blank">
                       <GitHub />
                     </Button>
