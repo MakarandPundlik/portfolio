@@ -4,6 +4,7 @@ import {
   BottomNavigationAction,
   Box,
   Button,
+  Grid
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import {
@@ -16,11 +17,12 @@ import {
   Email,
 } from "@material-ui/icons";
 const useStyles = makeStyles((theme) => ({
+  box:{
+    width:"100vw",
+    
+  },
   root: {
-    "& .MuiBottomNavigationAction-root": {
-      minWidth: 0,
-      maxWidth: 300,
-    },
+   
     "& .MuiSvgIcon-root": {
       fill: "tan",
       "&:hover": {
@@ -33,9 +35,10 @@ const useStyles = makeStyles((theme) => ({
 function BottomNav(props) {
   const classes = useStyles();
   return (
-    <Box>
-      <BottomNavigation style={{ backgroundColor: "#233" }}>
-        <Button
+    <Box className={classes.box}>
+      <BottomNavigation style={{ backgroundColor: "#222" }}>
+       <Grid container justify="center">
+       <Button
           target="_blank"
           href="https://www.facebook.com/makarand.pundlik/"
         >
@@ -62,8 +65,7 @@ function BottomNav(props) {
             icon={<Instagram />}
           />
         </Button>
-      </BottomNavigation>
-      <BottomNavigation style={{ backgroundColor: "#233" }}>
+        
         <Button target="_blank" href="https://github.com/MakarandPundlik">
           <BottomNavigationAction
             className={classes.root}
@@ -71,13 +73,7 @@ function BottomNav(props) {
             icon={<GitHub />}
           />
         </Button>
-        <Button>
-          <BottomNavigationAction
-            className={classes.root}
-            style={{ padding: 0 }}
-            icon={<Email />}
-          />
-        </Button>
+        
         <Button
           target="_blank"
           href="https://www.linkedin.com/in/makarand-pundlik-9127461a2/"
@@ -88,7 +84,10 @@ function BottomNav(props) {
             icon={<LinkedIn />}
           />
         </Button>
-      </BottomNavigation>
+
+         </Grid>
+         </BottomNavigation>
+     
     </Box>
   );
 }

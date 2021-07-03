@@ -61,7 +61,7 @@ import {AllInclusive, Book, Exposure, MenuBook, Policy, Web} from '@material-ui/
 const useStyles = makeStyles((theme) => ({
   paper: {
     padding:"1rem",
-   height:"5rem",
+  
     backgroundColor: "tan",
     color:"brown"
   },

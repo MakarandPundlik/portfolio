@@ -117,7 +117,7 @@ function Navbar(props) {
             onClose={toggleNav("right",false)}
             >
                 {sideList("right")}
-                <BottomNav/>
+               
             </RightMenuSlider>
           </Toolbar>
         </AppBar>

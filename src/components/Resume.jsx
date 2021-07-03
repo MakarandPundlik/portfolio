@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#233",
     width:"100vw",
-    height:"100vh"
+    height:"100%"
   },
 }));
 

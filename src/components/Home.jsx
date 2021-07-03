@@ -6,7 +6,7 @@ import Header from "./Header";
 
 const useStyles = makeStyles({
  root:{
-   background:"#233",
+   
    height:"100vh",
    width:"100vw"
  }

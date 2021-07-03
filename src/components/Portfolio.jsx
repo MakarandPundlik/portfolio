@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#233",
     
-    width:"100vw"
+    
   },
   cardContainer: {
     maxWidth: 345,
@@ -89,7 +89,7 @@ function Portfolio(props) {
       <Grid container>
         {projects.map((item, key) => {
           return (
-            <Grid item alignItem="center" sm={8} md={6} xl={4} lg={4} >
+            <Grid item alignItem="center" sm={12} md={6} xl={4} lg={4} xs={12}>
               <Card className={classes.cardContainer} key={key}>
                 <CardActionArea>
                   <CardMedia
