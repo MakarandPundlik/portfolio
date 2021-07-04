@@ -17,7 +17,7 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import { MenuOpen, Home, ContactMail, Apps,Assignment, Build } from "@material-ui/icons";
 import home from "../images/home.png";
-import BottomNav from "./BottomNav";
+
 
 
 const useStyles = makeStyles((theme) => ({

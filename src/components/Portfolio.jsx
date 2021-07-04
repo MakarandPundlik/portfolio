@@ -6,15 +6,7 @@ import java from "../images/java.jpg";
 import covid from "../images/covid.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 
-import node from "../images/node.png";
-import javascript from "../images/javascript.png";
-import react from "../images/react.png";
-import mongo from "../images/mongo.png";
-import mysql from "../images/mysql.png";
 
-import html from "../images/html.png";
-import css from "../images/css.png";
-import bootstrap from "../images/bootstrap.png";
 
 import { GitHub } from "@material-ui/icons";
 import {
@@ -143,7 +135,11 @@ function Portfolio(props) {
                       className={classes.cardTitle}
                     >
                       {item.title}
+                      <Button size="small" href={item.github} target="_blank">
+                      <GitHub />
+                    </Button>
                     </Typography>
+                   
                     <Typography variant="p" className={classes.cardContent}>
                       {item.content}
                     </Typography>
@@ -160,9 +156,7 @@ function Portfolio(props) {
                     })}
                   </Grid>
                   <CardActions>
-                    <Button size="small" href={item.github} target="_blank">
-                      <GitHub />
-                    </Button>
+                   
                   </CardActions>
                 </CardActionArea>
               </Card>

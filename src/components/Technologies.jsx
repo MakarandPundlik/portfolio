@@ -1,12 +1,13 @@
-import { Box, Grid, Avatar, Typography } from "@material-ui/core";
+import { Box, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
-import iconsdata from "./IconData";
-import BottomNav from "./BottomNav";
+import { languages, frameworks, database, devopps } from "./IconData";
+
 const useStyles = makeStyles((theme) => ({
   root: {
+    background: "#233",
     width: "100vw",
-    height: "100vh",
+    height: "100%",
   },
   grid: {
     padding: theme.spacing(3, 2),
@@ -15,9 +16,13 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
   },
-  gridImage:{
-   
-    padding:theme.spacing(1)
+  gridImage: {
+    margin: theme.spacing(2),
+  },
+  imageHeader: {
+    color: "tan",
+    textAlign: "center",
+    marginTop: "2rem",
   },
   styledAvatar: {
     height: theme.spacing(7),
@@ -37,28 +42,80 @@ function Technologies(props) {
       <Grid container justify="center">
         <Grid
           item
-          md={6}
+          md={12}
           lg={6}
           sm={12}
           xs={12}
           xl={6}
           className={classes.grid}
         >
-          <Typography variant="h3" style={{ color: "tan" }}>
+          <Typography
+            variant="h3"
+            style={{ color: "tan", textAlign: "center" }}
+          >
             TECHNOLOGIES I HAVE WORKED WITH
           </Typography>
         </Grid>
         <Grid
           item
-          md={6}
+          md={12}
           lg={6}
           sm={12}
           xs={12}
           xl={6}
-          
+          align="center"
+          justify="center"
+          alignItems="center"
         >
-          
-          {iconsdata.map((item, key) => {
+          <Typography variant="h5" className={classes.imageHeader}>
+            LANGUAGES
+          </Typography>
+          {languages.map((item, key) => {
+            return (
+              <img
+                src={item.icon}
+                key={key}
+                alt="test"
+                height="70"
+                width="70"
+                className={classes.gridImage}
+              />
+            );
+          })}
+          <Typography variant="h5" className={classes.imageHeader}>
+            FRAMEWORKS
+          </Typography>
+          {frameworks.map((item, key) => {
+            return (
+              <img
+                src={item.icon}
+                key={key}
+                alt="test"
+                height="60"
+                width="60"
+                className={classes.gridImage}
+              />
+            );
+          })}
+          <Typography variant="h5" className={classes.imageHeader}>
+            DATABASES
+          </Typography>
+          {database.map((item, key) => {
+            return (
+              <img
+                src={item.icon}
+                key={key}
+                alt="test"
+                height="60"
+                width="60"
+                className={classes.gridImage}
+              />
+            );
+          })}
+          <Typography variant="h5" className={classes.imageHeader}>
+            DEV-OPS
+          </Typography>
+          {devopps.map((item, key) => {
             return (
               <img
                 src={item.icon}
@@ -72,7 +129,6 @@ function Technologies(props) {
           })}
         </Grid>
       </Grid>
-      <BottomNav/>
     </Box>
   );
 }

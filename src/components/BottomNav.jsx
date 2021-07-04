@@ -13,8 +13,6 @@ import {
   LinkedIn,
   GitHub,
   Instagram,
-  
-  Email,
 } from "@material-ui/icons";
 const useStyles = makeStyles((theme) => ({
   box:{
