@@ -23,32 +23,7 @@ import github from '../images/github.jpg';
         progress:70,
         title:"css3"
     },
-    // {
-    //     icon:bootstrap,
-    //     progress:78,
-    //     title:"Bootstrap5"
-    // },
-    // {
-    //     icon:react,
-    //     progress:85,
-    //     title:"ReactJs"
-    // },
    
-    // {
-    //     icon:node,
-    //     progress:80,
-    //     title:"NodeJs"
-    // },
-    // {
-    //     icon:mongo,
-    //     progress:70,
-    //     title:"mongoDb"
-    // },
-    // {
-    //     icon:mysql,
-    //     progress:80,
-    //     title:"MySQL"
-    // },
     {
         icon:java,
         progress:90,
@@ -65,6 +40,38 @@ import github from '../images/github.jpg';
         progress:70,
         title:"C"
     }
+]
+
+const database=[
+   
+    {
+        icon:mongo,
+        progress:70,
+        title:"mongoDb"
+    },
+    {
+        icon:mysql,
+        progress:80,
+        title:"MySQL"
+    },
+]
+const frameworks=[
+    {
+        icon:bootstrap,
+        progress:78,
+        title:"Bootstrap5"
+    },
+    {
+        icon:react,
+        progress:85,
+        title:"ReactJs"
+    },
+   
+    {
+        icon:node,
+        progress:80,
+        title:"NodeJs"
+    },
 ]
 export default iconsdata;
 

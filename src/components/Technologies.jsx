@@ -5,17 +5,19 @@ import iconsdata from "./IconData";
 import BottomNav from "./BottomNav";
 const useStyles = makeStyles((theme) => ({
   root: {
-    width:"100vw",
-    height:"100vh"
-  },
-  subcontainer:{
-    position: "absolute",
-    top: "50%",
-    left: "50%",
     width: "100vw",
-    transform: "translate(-50%,-50%)",
-    textAlign: "center",
-    
+    height: "100vh",
+  },
+  grid: {
+    padding: theme.spacing(3, 2),
+
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+  },
+  gridImage:{
+   
+    padding:theme.spacing(1)
   },
   styledAvatar: {
     height: theme.spacing(7),
@@ -32,27 +34,45 @@ function Technologies(props) {
   const classes = useStyles();
   return (
     <Box component="div" className={classes.root}>
-      <Box component="div" className={classes.subcontainer}>
       <Grid container justify="center">
-        <Grid item md={6} lg={6} sm={12} xs={12} xl={6}>
+        <Grid
+          item
+          md={6}
+          lg={6}
+          sm={12}
+          xs={12}
+          xl={6}
+          className={classes.grid}
+        >
           <Typography variant="h3" style={{ color: "tan" }}>
             TECHNOLOGIES I HAVE WORKED WITH
           </Typography>
         </Grid>
-        <Grid item md={6} lg={6} sm={12} xs={12} xl={6}>
-        
+        <Grid
+          item
+          md={6}
+          lg={6}
+          sm={12}
+          xs={12}
+          xl={6}
+          
+        >
+          
           {iconsdata.map((item, key) => {
             return (
-             
-              <img src={item.icon} key={key} alt="test" height="60" />
-              
+              <img
+                src={item.icon}
+                key={key}
+                alt="test"
+                height="60"
+                width="60"
+                className={classes.gridImage}
+              />
             );
           })}
-         
         </Grid>
       </Grid>
-      </Box>
-     <BottomNav/>
+      <BottomNav/>
     </Box>
   );
 }
