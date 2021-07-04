@@ -6,8 +6,6 @@ import java from "../images/java.jpg";
 import covid from "../images/covid.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 
-
-
 import { GitHub } from "@material-ui/icons";
 import {
   Box,
@@ -32,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cardTitle: {},
   cardContent: {
-    fontSize:"1rem"
+    fontSize: "1rem",
   },
 }));
 
@@ -130,16 +128,17 @@ function Portfolio(props) {
                   ></CardMedia>
                   <CardContent>
                     <Typography
+                      display="flex"
                       gutterBottom
                       variant="h5"
                       className={classes.cardTitle}
                     >
                       {item.title}
                       <Button size="small" href={item.github} target="_blank">
-                      <GitHub />
-                    </Button>
+                        <GitHub />
+                      </Button>
                     </Typography>
-                   
+
                     <Typography variant="p" className={classes.cardContent}>
                       {item.content}
                     </Typography>
@@ -155,9 +154,7 @@ function Portfolio(props) {
                       );
                     })}
                   </Grid>
-                  <CardActions>
-                   
-                  </CardActions>
+                  <CardActions></CardActions>
                 </CardActionArea>
               </Card>
             </Grid>
