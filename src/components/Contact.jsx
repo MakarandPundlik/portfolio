@@ -56,32 +56,32 @@ function Contact(props) {
   });
   const [prompt, setPrompt] = useState(false);
   const handleChange = (e) => {
-    setContact({ ...contact, [e.target.id]: e.target.vlaue });
+    e.preventDefault();
+    console.log(e.target.value);
+    setContact({ ...contact, [e.target.id]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let profile = {};
-    profile.name = contact.name;
-    profile.email = contact.email;
-    profile.company = contact.company;
-    profile.today = new Date();
+   
+    
+  const today = new Date();
 
     firebase
       .firestore()
       .collection("contact")
       .add({
-        email: profile.email,
-        name: profile.name,
-        company: profile.company,
+        email: contact.email,
+        name: contact.name,
+        company: contact.company,
         date:
-          profile.today.getDate() +
+          today.getDate() +
           "-" +
-          parseInt(profile.today.getMonth() + 1) +
+          parseInt(today.getMonth() + 1) +
           "-" +
-          profile.today.getFullYear(),
+          today.getFullYear(),
       });
-
+      console.log(contact,today);
     setPrompt(true);
   };
   //snackbar event
@@ -116,6 +116,7 @@ function Contact(props) {
             variant="outlined"
             margin="dense"
             size="medium"
+            id="name"
             onChange={(e) => handleChange(e)}
             inputProps={{ style: { color: "tomato" } }}
           />
@@ -127,6 +128,7 @@ function Contact(props) {
             variant="outlined"
             margin="dense"
             size="medium"
+            id="email"
             onChange={(e) => handleChange(e)}
             inputProps={{ style: { color: "tomato" } }}
             autoComplete="off"
@@ -138,6 +140,7 @@ function Contact(props) {
             variant="outlined"
             margin="dense"
             size="medium"
+            id="company"
             onChange={(e) => handleChange(e)}
             inputProps={{ style: { color: "tomato" } }}
           />
