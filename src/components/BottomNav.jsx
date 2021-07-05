@@ -17,7 +17,7 @@ import {
 const useStyles = makeStyles((theme) => ({
   box:{
     width:"100vw",
-    
+    backgroundColor: "#222"
   },
   root: {
    
@@ -34,7 +34,7 @@ function BottomNav(props) {
   const classes = useStyles();
   return (
     <Box className={classes.box}>
-      <BottomNavigation style={{ backgroundColor: "#222" }}>
+      
        <Grid container justify="center">
        <Button
           target="_blank"
@@ -84,7 +84,7 @@ function BottomNav(props) {
         </Button>
 
          </Grid>
-         </BottomNavigation>
+         
      
     </Box>
   );
