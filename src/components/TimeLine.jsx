@@ -56,7 +56,7 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 
-import {AllInclusive, Book, Exposure, MenuBook, Policy, Web} from '@material-ui/icons';
+import {AllInclusive, Book, Exposure, MenuBook, Policy, Web,LocalDrink} from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -115,6 +115,12 @@ const timeline = [
         content: "BlogPost",
         subcontent:"Personal Project: A webapp to write your own stories",
         icon:<Book/>
+      },
+      {
+        year: "2021",
+        content: "Customizable Vending Machine",
+        subcontent:"A vending machine where user can customize lemonade",
+        icon:<LocalDrink/>
       }
     ];
 export default function TimeLine() {

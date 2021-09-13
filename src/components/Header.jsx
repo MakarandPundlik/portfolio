@@ -45,6 +45,8 @@ function Header(props) {
             "Web Development",
             "Full Stack Development",
             "Data Structures and Algorithms",
+            "Machine Learning Enthusiast",
+            "Cloud Computing"
           ]}
           typeSpeed={30}
           backSpeed={40}
