@@ -17,6 +17,7 @@ import materialui from "../images/materialui.png";
 import github from "../images/github.png";
 import heroku from "../images/heroku.png";
 import aws from "../images/aws.jpg";
+import jira from "../images/jira.png"
 export const languages = [
   {
     icon: html,
@@ -82,5 +83,8 @@ export const devopps = [
   },
   {
     icon:aws
+  },
+  {
+    icon:jira
   }
 ];
