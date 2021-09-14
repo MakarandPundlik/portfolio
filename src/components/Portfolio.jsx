@@ -17,6 +17,7 @@ import {
   CardContent,
   CardMedia,
   Button,
+  Slide
 } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -110,7 +111,23 @@ const projects = [
     ],
   },
 ];
+const getRandomDirection=()=>{
+  const k = Math.floor(Math.random()*4);
+
+  switch(k)
+  {
+    case 1:
+      return 'up';
+    case 2:
+      return 'down';
+    case 3:
+      return 'right';
+    default :
+      return 'left';  
+  }
+}
 function Portfolio(props) {
+ 
   const classes = useStyles();
   return (
     <Box component="div" className={classes.mainContainer}>
@@ -118,6 +135,7 @@ function Portfolio(props) {
         {projects.map((item, key) => {
           return (
             <Grid item alignItem="center" sm={12} md={6} xl={4} lg={4} xs={12}>
+              <Slide direction={getRandomDirection()} in={true} mountOnEnter unmountOnExit>
               <Card className={classes.cardContainer} key={key}>
                 <CardActionArea>
                   <CardMedia
@@ -157,6 +175,7 @@ function Portfolio(props) {
                   <CardActions></CardActions>
                 </CardActionArea>
               </Card>
+              </Slide>
             </Grid>
           );
         })}

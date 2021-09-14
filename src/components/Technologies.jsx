@@ -1,8 +1,8 @@
-import { Box, Grid, Typography } from "@material-ui/core";
+import { Box, Grid, Typography,Slide } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
 import { languages, frameworks, database, devopps } from "./IconData";
-import { motion } from "framer-motion";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -50,24 +50,14 @@ function Technologies(props) {
           xl={6}
           className={classes.grid}
         >
-          <motion.h1
-            initial={{ opacity: 0, x: "-50%" }}
-            animate={{
-              opacity: 1,
-              x: "0%",
-              transition: {
-                duration: 1.5,
-                ease: [0.7, 0.7, 0.7, 0.7],
-              },
-            }}
-          >
+          
             <Typography
               variant="h3"
               style={{ color: "tan", textAlign: "center" }}
             >
               TECHNOLOGIES I HAVE WORKED WITH
             </Typography>
-          </motion.h1>
+          
         </Grid>
         <Grid
           item
@@ -83,19 +73,11 @@ function Technologies(props) {
            <Typography variant="h5" className={classes.imageHeader}>
             LANGUAGES
           </Typography>
-          <motion.div
-            initial={{ opacity: 0, scale: 1.2, y: `${50 * Math.pow(-1, 1)}%` }}
-            animate={{
-              opacity: 1,
-              scale: 1,
-              y: "0%",
-              transition: { delay: 0.6, duration: 1 },
-            }}
-            inherit={false}
-          >
-           
+          
+         
             {languages.map((item, i) => {
               return (
+                <Slide direction="down" in={true} mountOnEnter unmountOnExit>
                 <img
                   src={item.icon}
                   key={i}
@@ -104,24 +86,17 @@ function Technologies(props) {
                   width="70"
                   className={classes.gridImage}
                 />
+                 </Slide>
               );
             })}
-          </motion.div>
+         
           <Typography variant="h5" className={classes.imageHeader}>
             FRAMEWORKS
           </Typography>
-          <motion.div
-            initial={{ opacity: 0, scale: 1.2, y: `${50 * Math.pow(-1, 1)}%` }}
-            animate={{
-              opacity: 1,
-              scale: 1,
-              y: "0%",
-              transition: { delay: 0.6, duration: 1 },
-            }}
-            inherit={false}
-          >
+          
           {frameworks.map((item, key) => {
             return (
+              <Slide direction="up" in={true} mountOnEnter unmountOnExit>
               <img
                 src={item.icon}
                 key={key}
@@ -130,24 +105,18 @@ function Technologies(props) {
                 width="60"
                 className={classes.gridImage}
               />
+              </Slide>
             );
           })}
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, scale: 1.2, y: `${50 * Math.pow(-1, 1)}%` }}
-            animate={{
-              opacity: 1,
-              scale: 1,
-              y: "0%",
-              transition: { delay: 0.6, duration: 1 },
-            }}
-            inherit={false}
-          >
+          
           <Typography variant="h5" className={classes.imageHeader}>
             DATABASES
           </Typography>
+          
+         
           {database.map((item, key) => {
             return (
+              <Slide direction="left" in={true} mountOnEnter unmountOnExit>
               <img
                 src={item.icon}
                 key={key}
@@ -156,24 +125,17 @@ function Technologies(props) {
                 width="60"
                 className={classes.gridImage}
               />
+              </Slide>
             );
           })}
-          </motion.div>
+          
           <Typography variant="h5" className={classes.imageHeader}>
             DEV-OPS
           </Typography>
-          <motion.div
-            initial={{ opacity: 0, scale: 1.2, y: `${50 * Math.pow(-1, 1)}%` }}
-            animate={{
-              opacity: 1,
-              scale: 1,
-              y: "0%",
-              transition: { delay: 0.6, duration: 1 },
-            }}
-            inherit={false}
-          >
+          
           {devopps.map((item, key) => {
             return (
+              <Slide direction="right" in={true} mountOnEnter unmountOnExit>
               <img
                 src={item.icon}
                 key={key}
@@ -182,9 +144,10 @@ function Technologies(props) {
                 width="60"
                 className={classes.gridImage}
               />
+              </Slide>
             );
           })}
-          </motion.div>
+          
         </Grid>
       </Grid>
     </Box>

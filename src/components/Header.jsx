@@ -1,4 +1,4 @@
-import { Box, Avatar, Typography, Grid } from "@material-ui/core";
+import { Box, Avatar, Typography, Grid,Slide } from "@material-ui/core";
 import React from "react";
 import home from "../images/home.png";
 import Typed from "react-typed";
@@ -33,7 +33,9 @@ function Header(props) {
   return (
     <Box className={classes.typedContainer}>
       <Grid container justify="center">
+      <Slide direction="down" in={true} mountOnEnter unmountOnExit>
         <Avatar className={classes.avatar} src={home} alt="avatar" />
+        </Slide>
       </Grid>
       <Typography className={classes.title} variant="h3">
         <Typed strings={["Makarand Pundlik"]} typeSpeed={40} />
