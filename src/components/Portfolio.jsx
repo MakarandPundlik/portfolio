@@ -4,6 +4,7 @@ import ipr from "../images/ipr.png";
 import vms from "../images/vms.jpg";
 import java from "../images/java.jpg";
 import covid from "../images/covid.jpg";
+import aos from "../images/aos.jpg"
 import { makeStyles } from "@material-ui/core/styles";
 
 import { GitHub } from "@material-ui/icons";
@@ -36,6 +37,24 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const projects = [
+  {
+    title: "Art of Success",
+    content:
+      "Web portal to help students with dyslexia,ADHD and social awkwardness.This portal also includes features like chatting,video calling,video streaming,student assesment,parent teacher meeting and role based access.",
+    
+    image: aos,
+    techStack: [
+      "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+      "https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white",
+      "https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white",
+       "https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white",
+       "https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white",
+       "https://img.shields.io/badge/MongoDB-white?style=for-the-badge&logo=mongodb&logoColor=4EA94B",
+      "https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white",
+      "https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white",
+      "https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white"
+    ],
+  },
   {
     title: "CovidTracker",
     content:
