@@ -55,7 +55,7 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-
+import {Slide} from "@material-ui/core";
 import {AllInclusive, Book, Exposure, MenuBook, Policy, Web,LocalDrink} from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
@@ -121,6 +121,12 @@ const timeline = [
         content: "Customizable Vending Machine",
         subcontent:"A vending machine where user can customize lemonade",
         icon:<LocalDrink/>
+      },
+      {
+        year: "2021",
+        content: "Art of Success",
+        subcontent:"Web portal for students suffering with dyslexia",
+        icon:<Web/>
       }
     ];
 export default function TimeLine() {
@@ -131,6 +137,7 @@ export default function TimeLine() {
       {
           timeline.map((item,key)=>{
               return(
+                <Slide direction={key%2===0?'left':'right'} in={true} mountOnEnter unmountOnExit>
                 <TimelineItem key={key}>
                 <TimelineOppositeContent >
                   <Typography variant="h5" className={classes.year}>
@@ -152,7 +159,7 @@ export default function TimeLine() {
                   </Paper>
                 </TimelineContent>
               </TimelineItem>
-              
+              </Slide>
               )
           })
       }

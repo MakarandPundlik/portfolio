@@ -6,6 +6,7 @@ import {
   Grid,
   TextField,
   Snackbar,
+  Slide
 } from "@material-ui/core";
 import { Alert } from "@material-ui/lab";
 import { withStyles, makeStyles } from "@material-ui/styles";
@@ -89,6 +90,7 @@ function Contact(props) {
     setPrompt(false);
   };
   return (
+    <Slide direction="up" in={true} mountOnEnter unmountOnExit>
     <Box component="div" style={{ background: "#233", height: "100vh" }}>
       <Grid container justify="center">
         {prompt && (
@@ -102,6 +104,7 @@ function Contact(props) {
             </Alert>
           </Snackbar>
         )}
+        
         <Box
           component="form"
           className={classes.form}
@@ -154,8 +157,10 @@ function Contact(props) {
             Contact Me
           </Button>
         </Box>
+       
       </Grid>
     </Box>
+    </Slide>
   );
 }
 
