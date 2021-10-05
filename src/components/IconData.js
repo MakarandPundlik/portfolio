@@ -1,94 +1,89 @@
-import node from "../images/node.png";
-import javascript from "../images/javascript.png";
-import react from "../images/react.png";
-import mongodb from "../images/mongodb.png";
-import mysql from "../images/mysql.png";
-import firebase from "../images/firebase.png";
-import javaC from "../images/javaC.png";
-import html from "../images/html.png";
-import css from "../images/css.png";
-import bootstrap from "../images/bootstrap.png";
-import c from "../images/c.png";
-import cpp from "../images/cpp.png";
-import ionic from "../images/ionic.png";
-import expressjs from "../images/expressjs.png";
-import typescript from "../images/typescript.png";
-import materialui from "../images/materialui.png";
-import github from "../images/github.png";
-import heroku from "../images/heroku.png";
-import aws from "../images/aws.jpg";
-import jira from "../images/jira.png"
-import git from "../images/git.png";
+
 export const languages = [
   {
-    icon: html,
+    icon: "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
   },
   {
-    icon: css,
+    icon: "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
   },
   {
-    icon: c,
+    icon: "https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white",
   },
   {
-    icon: cpp,
+    icon: "https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white",
   },
   {
-    icon: javaC,
+    icon: "https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=black",
   },
 
   {
-    icon: javascript,
+    icon: "https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E",
   },
   {
-    icon: typescript,
+    icon: "https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white",
   },
+  {
+    icon:"https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"
+  }
 ];
 
 export const database = [
   {
-    icon: mongodb,
+    icon: "https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=for-the-badge&logo=mongodb&logoColor=white",
   },
   {
-    icon: mysql,
+    icon:"https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white",
   },
   {
-    icon:firebase
+    icon:"https://img.shields.io/badge/Firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=white"
   }
 ];
 export const frameworks = [
   {
-    icon: bootstrap,
+    icon: "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white",
   },
   {
-    icon: materialui,
+    icon: "https://img.shields.io/badge/MUI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white",
   },
   {
-    icon: ionic,
+    icon: "https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB",
   },
   {
-    icon: react,
+    icon: "https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white",
   },
   {
-    icon: node,
+    icon: "https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge",
   },
   {
-    icon: expressjs,
+    icon:"https://img.shields.io/badge/ChartJS-FF6384?style=for-the-badge&logo=chart-dot-js&logoColor=white"
+  },
+  {
+    icon:"https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white"
+  },
+  {
+    icon:"https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white"
   },
 ];
 export const devopps = [
   {
-    icon: github,
+    icon: "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white",
   },
   {
-    icon: heroku,
+    icon: "https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white",
   },
   {
-    icon:aws
+    icon:"https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white"
   },
   {
-    icon:jira
+    icon:"https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white"
   },
   {
-    icon:git
+    icon:"https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"
+  },
+  {
+    icon:"https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white"
+  },
+  {
+    icon:"https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
   }
 ];

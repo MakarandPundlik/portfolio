@@ -82,8 +82,8 @@ function Technologies(props) {
                   src={item.icon}
                   key={i}
                   alt="test"
-                  height="70"
-                  width="70"
+                  height="35"
+                  width="100"
                   className={classes.gridImage}
                 />
                  </Slide>
@@ -101,8 +101,8 @@ function Technologies(props) {
                 src={item.icon}
                 key={key}
                 alt="test"
-                height="60"
-                width="60"
+                height="35"
+                width="100"
                 className={classes.gridImage}
               />
               </Slide>
@@ -121,8 +121,8 @@ function Technologies(props) {
                 src={item.icon}
                 key={key}
                 alt="test"
-                height="60"
-                width="60"
+                height="35"
+                width="100"
                 className={classes.gridImage}
               />
               </Slide>
@@ -140,8 +140,8 @@ function Technologies(props) {
                 src={item.icon}
                 key={key}
                 alt="test"
-                height="60"
-                width="60"
+                height="35"
+                width="100"
                 className={classes.gridImage}
               />
               </Slide>
