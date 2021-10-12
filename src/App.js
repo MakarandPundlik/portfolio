@@ -11,7 +11,7 @@ import Technologies from './components/Technologies';
 import BottomNav from './components/BottomNav';
 function App() {
   useEffect(() => {
-    document.body.style.backgroundColor="#233"
+    document.body.style.backgroundColor="#000"
   }, [])
   return (
     <>

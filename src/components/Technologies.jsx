@@ -6,7 +6,7 @@ import { languages, frameworks, database, devopps } from "./IconData";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    background: "#233",
+    background: "#000",
     width: "100vw",
     height: "100%",
   },

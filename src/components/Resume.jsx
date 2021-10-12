@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
    
   },
   mainContainer: {
-    background: "#233",
+    background: "#000",
     width:"100vw",
     height:"100%"
   },

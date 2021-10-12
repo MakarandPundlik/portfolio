@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign:"center"
   },
   typedContainer: {
-    background: "#233",
+    background: "#000",
     position: "absolute",
     top: "50%",
     left: "50%",

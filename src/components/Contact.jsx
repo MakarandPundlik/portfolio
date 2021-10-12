@@ -91,7 +91,7 @@ function Contact(props) {
   };
   return (
     <Slide direction="up" in={true} mountOnEnter unmountOnExit>
-    <Box component="div" style={{ background: "#233", height: "100vh" }}>
+    <Box component="div" style={{ background: "#000", height: "100vh" }}>
       <Grid container justify="center">
         {prompt && (
           <Snackbar

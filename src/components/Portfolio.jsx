@@ -23,7 +23,7 @@ import {
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
+    background: "#000",
   },
   cardContainer: {
     maxWidth: 345,

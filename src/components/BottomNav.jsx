@@ -16,7 +16,7 @@ import {
 const useStyles = makeStyles((theme) => ({
   box:{
     width:"100vw",
-    backgroundColor: "#222"
+    backgroundColor: "#000"
   },
   root: {
    
