@@ -1,13 +1,13 @@
 import { Box, Avatar, Typography, Grid,Slide } from "@material-ui/core";
 import React from "react";
-import home from "../images/home.png";
+import home from "../images/home.png"
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: theme.spacing(15),
-    height: theme.spacing(15),
+    width: theme.spacing(25),
+    height: theme.spacing(25),
     margin: theme.spacing(1),
   },
   title: {

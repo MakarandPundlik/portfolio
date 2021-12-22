@@ -75,7 +75,7 @@ function Navbar(props) {
   //side list 
   const sideList = (slider) => (
     <Box onClick={toggleNav("right",false)} className={classes.menuSliderContainer} component="div">
-    <Avatar className={classes.avatar} src={home} alt="me" />
+    {/* <Avatar className={classes.avatar} src={home} alt="me" /> */}
     <Divider />
     <List>
       {navItems.map((item, key) => {
